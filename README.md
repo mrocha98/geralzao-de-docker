@@ -25,7 +25,7 @@ O roteiro e os links utilizados estão disponíveis nesse link: <https://www.not
 
 ## 📋 Requisitos
 
-- [NodeJs](https://github.com/nvm-sh/nvm) - recomendamos a versão LTS
+- [NodeJs](https://nodejs.org/en/download/) - recomendamos a versão LTS
 - [Yarn](https://yarnpkg.com/)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
@@ -55,16 +55,16 @@ Troque os valores que julgar necessário.
 
 Inicie os containers
 ```bash
-docker-compose pull
-docker-compose up -d
-docker-compose logs -f
+docker-compose pull # baixa as imagens
+docker-compose up -d # inicia os containers
+docker-compose logs -f # loga os registros (retire o -f se quiser continuar no mesmo terminal)
 ```
 
 Assim que o banco estiver pronto para receber conexões, execute os comandos:
 
 ```bash
-yarn knex:migrate // roda as migrations do banco
-yarn start:dev // inicia a aplicação em modo de desenvolvimento
+yarn knex:migrate # roda as migrations do banco
+yarn start:dev # inicia a aplicação em modo de desenvolvimento
 ```
 
 ## 📝 Licença
