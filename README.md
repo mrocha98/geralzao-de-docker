@@ -60,10 +60,11 @@ docker-compose up -d
 docker-compose logs -f
 ```
 
-Assim que o banco estiver pronto para receber conexões, inicie a aplicação em modo de desenvolvimento
+Assim que o banco estiver pronto para receber conexões, execute os comandos:
 
 ```bash
-yarn start:dev
+yarn knex:migrate // roda as migrations do banco
+yarn start:dev // inicia a aplicação em modo de desenvolvimento
 ```
 
 ## 📝 Licença
